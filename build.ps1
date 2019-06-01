@@ -18,6 +18,7 @@ $slnpath = Resolve-Path ./client/Cloudmersive.APIClient.NET.Barcode.sln
 (Get-Content $nuspecpath).replace('<owners>$author$</owners>', "<owners>Cloudmersive</owners>") | Set-Content $nuspecpath
 (Get-Content $nuspecpath).replace('<description>A library generated from a Swagger doc</description>', "<description>Barcode APIs let you generate barcode images, and recognize values from images of barcodes.</description>") | Set-Content $nuspecpath
 (Get-Content $nuspecpath).replace('<!-- Authors contain text that appears directly on the gallery -->', "<iconUrl>https://cloudmersive.com/images/cmsdk.png</iconUrl>") | Set-Content $nuspecpath
+(Get-Content $nuspecpath).replace('<dependencies>', "<projectUrl>https://cloudmersive.com/barcode-api</projectUrl><dependencies>") | Set-Content $nuspecpath
 
 
 
