@@ -33,14 +33,14 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BarcodeScanResult" /> class.
         /// </summary>
-        /// <param name="Successful">True if the operation was successful, false otherwise.</param>
-        /// <param name="BarcodeType">The type of the barcode; possible values are AZTEC, CODABAR, CODE_39, CODE_93, CODE_128, DATA_MATRIX, EAN_8, EAN_13, ITF, MAXICODE, PDF_417, QR_CODE, RSS_14, RSS_EXPANDED, UPC_A, UPC_E, All_1D, UPC_EAN_EXTENSION, MSI, PLESSEY, IMB.</param>
-        /// <param name="RawText">The barcode text.</param>
-        public BarcodeScanResult(bool? Successful = default(bool?), string BarcodeType = default(string), string RawText = default(string))
+        /// <param name="successful">True if the operation was successful, false otherwise.</param>
+        /// <param name="barcodeType">The type of the barcode; possible values are AZTEC, CODABAR, CODE_39, CODE_93, CODE_128, DATA_MATRIX, EAN_8, EAN_13, ITF, MAXICODE, PDF_417, QR_CODE, RSS_14, RSS_EXPANDED, UPC_A, UPC_E, All_1D, UPC_EAN_EXTENSION, MSI, PLESSEY, IMB.</param>
+        /// <param name="rawText">The barcode text.</param>
+        public BarcodeScanResult(bool? successful = default(bool?), string barcodeType = default(string), string rawText = default(string))
         {
-            this.Successful = Successful;
-            this.BarcodeType = BarcodeType;
-            this.RawText = RawText;
+            this.Successful = successful;
+            this.BarcodeType = barcodeType;
+            this.RawText = rawText;
         }
         
         /// <summary>
@@ -83,7 +83,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

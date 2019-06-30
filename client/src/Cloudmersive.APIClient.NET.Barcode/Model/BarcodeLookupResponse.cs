@@ -33,12 +33,12 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BarcodeLookupResponse" /> class.
         /// </summary>
-        /// <param name="Successful">Successful.</param>
-        /// <param name="Matches">Matches.</param>
-        public BarcodeLookupResponse(bool? Successful = default(bool?), List<ProductMatch> Matches = default(List<ProductMatch>))
+        /// <param name="successful">successful.</param>
+        /// <param name="matches">matches.</param>
+        public BarcodeLookupResponse(bool? successful = default(bool?), List<ProductMatch> matches = default(List<ProductMatch>))
         {
-            this.Successful = Successful;
-            this.Matches = Matches;
+            this.Successful = successful;
+            this.Matches = matches;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }

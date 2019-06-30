@@ -33,12 +33,12 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ProductMatch" /> class.
         /// </summary>
-        /// <param name="EAN">EAN.</param>
-        /// <param name="Title">Title.</param>
-        public ProductMatch(string EAN = default(string), string Title = default(string))
+        /// <param name="eAN">eAN.</param>
+        /// <param name="title">title.</param>
+        public ProductMatch(string eAN = default(string), string title = default(string))
         {
-            this.EAN = EAN;
-            this.Title = Title;
+            this.EAN = eAN;
+            this.Title = title;
         }
         
         /// <summary>
@@ -71,7 +71,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
+        public virtual string ToJson()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }
