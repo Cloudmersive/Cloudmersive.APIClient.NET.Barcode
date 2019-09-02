@@ -13,7 +13,7 @@ $nuspecpath = Resolve-Path ./client/src/Cloudmersive.APIClient.NET.Barcode/Cloud
 $slnpath = Resolve-Path ./client/Cloudmersive.APIClient.NET.Barcode.sln
 
 
-(Get-Content $nuspecpath).replace('<title>Swagger Library</title>', "<title>Cloudmersive Barcode API Client</title><license type=`"expression`">Apache-2.0</license>") | Set-Content $nuspecpath
+(Get-Content $nuspecpath).replace('<title>Swagger Library</title>', "<title>Cloudmersive Barcode API Client</title><licenseUrl>https://www.apache.org/licenses/LICENSE-2.0.txt</licenseUrl>") | Set-Content $nuspecpath
 (Get-Content $nuspecpath).replace('<authors>$author$</authors>', "<authors>Cloudmersive</authors>") | Set-Content $nuspecpath
 (Get-Content $nuspecpath).replace('<owners>$author$</owners>', "<owners>Cloudmersive</owners>") | Set-Content $nuspecpath
 (Get-Content $nuspecpath).replace('<description>A library generated from a Swagger doc</description>', "<description>Barcode APIs let you generate barcode images, and recognize values from images of barcodes.</description>") | Set-Content $nuspecpath
