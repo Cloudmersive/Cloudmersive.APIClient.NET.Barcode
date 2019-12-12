@@ -25,7 +25,7 @@ using SwaggerDateConverter = Cloudmersive.APIClient.NET.Barcode.Client.SwaggerDa
 namespace Cloudmersive.APIClient.NET.Barcode.Model
 {
     /// <summary>
-    /// BarcodeLookupResponse
+    /// Result of performing a barcode lookup
     /// </summary>
     [DataContract]
     public partial class BarcodeLookupResponse :  IEquatable<BarcodeLookupResponse>, IValidatableObject
@@ -33,8 +33,8 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BarcodeLookupResponse" /> class.
         /// </summary>
-        /// <param name="successful">successful.</param>
-        /// <param name="matches">matches.</param>
+        /// <param name="successful">True if operation was successful, false otherwise.</param>
+        /// <param name="matches">Resulting product matches for the input barcode.</param>
         public BarcodeLookupResponse(bool? successful = default(bool?), List<ProductMatch> matches = default(List<ProductMatch>))
         {
             this.Successful = successful;
@@ -42,14 +42,16 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
         }
         
         /// <summary>
-        /// Gets or Sets Successful
+        /// True if operation was successful, false otherwise
         /// </summary>
+        /// <value>True if operation was successful, false otherwise</value>
         [DataMember(Name="Successful", EmitDefaultValue=false)]
         public bool? Successful { get; set; }
 
         /// <summary>
-        /// Gets or Sets Matches
+        /// Resulting product matches for the input barcode
         /// </summary>
+        /// <value>Resulting product matches for the input barcode</value>
         [DataMember(Name="Matches", EmitDefaultValue=false)]
         public List<ProductMatch> Matches { get; set; }
 

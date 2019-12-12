@@ -25,7 +25,7 @@ using SwaggerDateConverter = Cloudmersive.APIClient.NET.Barcode.Client.SwaggerDa
 namespace Cloudmersive.APIClient.NET.Barcode.Model
 {
     /// <summary>
-    /// ProductMatch
+    /// Matching product for the input barcode
     /// </summary>
     [DataContract]
     public partial class ProductMatch :  IEquatable<ProductMatch>, IValidatableObject
@@ -33,8 +33,8 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ProductMatch" /> class.
         /// </summary>
-        /// <param name="eAN">eAN.</param>
-        /// <param name="title">title.</param>
+        /// <param name="eAN">EAN code for the product.</param>
+        /// <param name="title">Title of the product.</param>
         public ProductMatch(string eAN = default(string), string title = default(string))
         {
             this.EAN = eAN;
@@ -42,14 +42,16 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
         }
         
         /// <summary>
-        /// Gets or Sets EAN
+        /// EAN code for the product
         /// </summary>
+        /// <value>EAN code for the product</value>
         [DataMember(Name="EAN", EmitDefaultValue=false)]
         public string EAN { get; set; }
 
         /// <summary>
-        /// Gets or Sets Title
+        /// Title of the product
         /// </summary>
+        /// <value>Title of the product</value>
         [DataMember(Name="Title", EmitDefaultValue=false)]
         public string Title { get; set; }
 
