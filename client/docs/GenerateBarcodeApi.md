@@ -4,16 +4,18 @@ All URIs are relative to *https://api.cloudmersive.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GenerateBarcodeEAN13**](GenerateBarcodeApi.md#generatebarcodeean13) | **POST** /barcode/generate/ean-13 | Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
-[**GenerateBarcodeEAN8**](GenerateBarcodeApi.md#generatebarcodeean8) | **POST** /barcode/generate/ean-8 | Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
-[**GenerateBarcodeQRCode**](GenerateBarcodeApi.md#generatebarcodeqrcode) | **POST** /barcode/generate/qrcode | Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
-[**GenerateBarcodeUPCA**](GenerateBarcodeApi.md#generatebarcodeupca) | **POST** /barcode/generate/upc-a | Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
-[**GenerateBarcodeUPCE**](GenerateBarcodeApi.md#generatebarcodeupce) | **POST** /barcode/generate/upc-e | Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
+[**GenerateBarcodeEAN13**](GenerateBarcodeApi.md#generatebarcodeean13) | **POST** /barcode/generate/ean-13 | Generate a EAN-13 code barcode as PNG file
+[**GenerateBarcodeEAN8**](GenerateBarcodeApi.md#generatebarcodeean8) | **POST** /barcode/generate/ean-8 | Generate a EAN-8 code barcode as PNG file
+[**GenerateBarcodeQRCode**](GenerateBarcodeApi.md#generatebarcodeqrcode) | **POST** /barcode/generate/qrcode | Generate a QR code barcode as PNG file
+[**GenerateBarcodeUPCA**](GenerateBarcodeApi.md#generatebarcodeupca) | **POST** /barcode/generate/upc-a | Generate a UPC-A code barcode as PNG file
+[**GenerateBarcodeUPCE**](GenerateBarcodeApi.md#generatebarcodeupce) | **POST** /barcode/generate/upc-e | Generate a UPC-E code barcode as PNG file
 
 
 <a name="generatebarcodeean13"></a>
 # **GenerateBarcodeEAN13**
-> System.IO.Stream GenerateBarcodeEAN13 (string value)
+> byte[] GenerateBarcodeEAN13 (string value)
+
+Generate a EAN-13 code barcode as PNG file
 
 Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
 
@@ -41,8 +43,8 @@ namespace Example
 
             try
             {
-                // Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
-                System.IO.Stream result = apiInstance.GenerateBarcodeEAN13(value);
+                // Generate a EAN-13 code barcode as PNG file
+                byte[] result = apiInstance.GenerateBarcodeEAN13(value);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -62,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**System.IO.Stream**
+**byte[]**
 
 ### Authorization
 
@@ -71,13 +73,15 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: image/png
+ - **Accept**: application/octet-stream
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="generatebarcodeean8"></a>
 # **GenerateBarcodeEAN8**
-> System.IO.Stream GenerateBarcodeEAN8 (string value)
+> byte[] GenerateBarcodeEAN8 (string value)
+
+Generate a EAN-8 code barcode as PNG file
 
 Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
 
@@ -105,8 +109,8 @@ namespace Example
 
             try
             {
-                // Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
-                System.IO.Stream result = apiInstance.GenerateBarcodeEAN8(value);
+                // Generate a EAN-8 code barcode as PNG file
+                byte[] result = apiInstance.GenerateBarcodeEAN8(value);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -126,7 +130,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**System.IO.Stream**
+**byte[]**
 
 ### Authorization
 
@@ -135,13 +139,15 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: image/png
+ - **Accept**: application/octet-stream
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="generatebarcodeqrcode"></a>
 # **GenerateBarcodeQRCode**
-> System.IO.Stream GenerateBarcodeQRCode (string value)
+> byte[] GenerateBarcodeQRCode (string value)
+
+Generate a QR code barcode as PNG file
 
 Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
 
@@ -169,8 +175,8 @@ namespace Example
 
             try
             {
-                // Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
-                System.IO.Stream result = apiInstance.GenerateBarcodeQRCode(value);
+                // Generate a QR code barcode as PNG file
+                byte[] result = apiInstance.GenerateBarcodeQRCode(value);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -190,7 +196,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**System.IO.Stream**
+**byte[]**
 
 ### Authorization
 
@@ -199,13 +205,15 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: image/png
+ - **Accept**: application/octet-stream
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="generatebarcodeupca"></a>
 # **GenerateBarcodeUPCA**
-> System.IO.Stream GenerateBarcodeUPCA (string value)
+> byte[] GenerateBarcodeUPCA (string value)
+
+Generate a UPC-A code barcode as PNG file
 
 Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
 
@@ -233,8 +241,8 @@ namespace Example
 
             try
             {
-                // Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
-                System.IO.Stream result = apiInstance.GenerateBarcodeUPCA(value);
+                // Generate a UPC-A code barcode as PNG file
+                byte[] result = apiInstance.GenerateBarcodeUPCA(value);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -254,7 +262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**System.IO.Stream**
+**byte[]**
 
 ### Authorization
 
@@ -263,13 +271,15 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: image/png
+ - **Accept**: application/octet-stream
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="generatebarcodeupce"></a>
 # **GenerateBarcodeUPCE**
-> System.IO.Stream GenerateBarcodeUPCE (string value)
+> byte[] GenerateBarcodeUPCE (string value)
+
+Generate a UPC-E code barcode as PNG file
 
 Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
 
@@ -297,8 +307,8 @@ namespace Example
 
             try
             {
-                // Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
-                System.IO.Stream result = apiInstance.GenerateBarcodeUPCE(value);
+                // Generate a UPC-E code barcode as PNG file
+                byte[] result = apiInstance.GenerateBarcodeUPCE(value);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -318,7 +328,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-**System.IO.Stream**
+**byte[]**
 
 ### Authorization
 
@@ -327,7 +337,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: image/png
+ - **Accept**: application/octet-stream
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

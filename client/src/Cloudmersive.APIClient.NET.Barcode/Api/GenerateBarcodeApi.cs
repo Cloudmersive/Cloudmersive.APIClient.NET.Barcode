@@ -24,217 +24,217 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
     {
         #region Synchronous Operations
         /// <summary>
-        /// Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
+        /// Generate a EAN-13 code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>System.IO.Stream</returns>
-        System.IO.Stream GenerateBarcodeEAN13 (string value);
+        /// <returns>byte[]</returns>
+        byte[] GenerateBarcodeEAN13 (string value);
 
         /// <summary>
+        /// Generate a EAN-13 code barcode as PNG file
+        /// </summary>
+        /// <remarks>
         /// Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
-        /// </summary>
-        /// <remarks>
-        /// 
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> GenerateBarcodeEAN13WithHttpInfo (string value);
+        /// <returns>ApiResponse of byte[]</returns>
+        ApiResponse<byte[]> GenerateBarcodeEAN13WithHttpInfo (string value);
         /// <summary>
-        /// Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
+        /// Generate a EAN-8 code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>System.IO.Stream</returns>
-        System.IO.Stream GenerateBarcodeEAN8 (string value);
+        /// <returns>byte[]</returns>
+        byte[] GenerateBarcodeEAN8 (string value);
 
         /// <summary>
-        /// Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
+        /// Generate a EAN-8 code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> GenerateBarcodeEAN8WithHttpInfo (string value);
+        /// <returns>ApiResponse of byte[]</returns>
+        ApiResponse<byte[]> GenerateBarcodeEAN8WithHttpInfo (string value);
         /// <summary>
+        /// Generate a QR code barcode as PNG file
+        /// </summary>
+        /// <remarks>
         /// Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
-        /// </summary>
-        /// <remarks>
-        /// 
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">QR code text to convert into the QR code barcode</param>
-        /// <returns>System.IO.Stream</returns>
-        System.IO.Stream GenerateBarcodeQRCode (string value);
+        /// <returns>byte[]</returns>
+        byte[] GenerateBarcodeQRCode (string value);
 
         /// <summary>
-        /// Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
+        /// Generate a QR code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">QR code text to convert into the QR code barcode</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> GenerateBarcodeQRCodeWithHttpInfo (string value);
+        /// <returns>ApiResponse of byte[]</returns>
+        ApiResponse<byte[]> GenerateBarcodeQRCodeWithHttpInfo (string value);
         /// <summary>
-        /// Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
+        /// Generate a UPC-A code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-A barcode value to generate from</param>
-        /// <returns>System.IO.Stream</returns>
-        System.IO.Stream GenerateBarcodeUPCA (string value);
+        /// <returns>byte[]</returns>
+        byte[] GenerateBarcodeUPCA (string value);
 
         /// <summary>
-        /// Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
+        /// Generate a UPC-A code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-A barcode value to generate from</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> GenerateBarcodeUPCAWithHttpInfo (string value);
+        /// <returns>ApiResponse of byte[]</returns>
+        ApiResponse<byte[]> GenerateBarcodeUPCAWithHttpInfo (string value);
         /// <summary>
-        /// Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
+        /// Generate a UPC-E code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-E barcode value to generate from</param>
-        /// <returns>System.IO.Stream</returns>
-        System.IO.Stream GenerateBarcodeUPCE (string value);
+        /// <returns>byte[]</returns>
+        byte[] GenerateBarcodeUPCE (string value);
 
         /// <summary>
-        /// Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
+        /// Generate a UPC-E code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-E barcode value to generate from</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        ApiResponse<System.IO.Stream> GenerateBarcodeUPCEWithHttpInfo (string value);
+        /// <returns>ApiResponse of byte[]</returns>
+        ApiResponse<byte[]> GenerateBarcodeUPCEWithHttpInfo (string value);
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
-        /// Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
+        /// Generate a EAN-13 code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> GenerateBarcodeEAN13Async (string value);
+        /// <returns>Task of byte[]</returns>
+        System.Threading.Tasks.Task<byte[]> GenerateBarcodeEAN13Async (string value);
 
         /// <summary>
+        /// Generate a EAN-13 code barcode as PNG file
+        /// </summary>
+        /// <remarks>
         /// Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
-        /// </summary>
-        /// <remarks>
-        /// 
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GenerateBarcodeEAN13AsyncWithHttpInfo (string value);
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        System.Threading.Tasks.Task<ApiResponse<byte[]>> GenerateBarcodeEAN13AsyncWithHttpInfo (string value);
         /// <summary>
-        /// Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
+        /// Generate a EAN-8 code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> GenerateBarcodeEAN8Async (string value);
+        /// <returns>Task of byte[]</returns>
+        System.Threading.Tasks.Task<byte[]> GenerateBarcodeEAN8Async (string value);
 
         /// <summary>
-        /// Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
+        /// Generate a EAN-8 code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GenerateBarcodeEAN8AsyncWithHttpInfo (string value);
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        System.Threading.Tasks.Task<ApiResponse<byte[]>> GenerateBarcodeEAN8AsyncWithHttpInfo (string value);
         /// <summary>
+        /// Generate a QR code barcode as PNG file
+        /// </summary>
+        /// <remarks>
         /// Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
-        /// </summary>
-        /// <remarks>
-        /// 
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">QR code text to convert into the QR code barcode</param>
-        /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> GenerateBarcodeQRCodeAsync (string value);
+        /// <returns>Task of byte[]</returns>
+        System.Threading.Tasks.Task<byte[]> GenerateBarcodeQRCodeAsync (string value);
 
         /// <summary>
-        /// Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
+        /// Generate a QR code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">QR code text to convert into the QR code barcode</param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GenerateBarcodeQRCodeAsyncWithHttpInfo (string value);
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        System.Threading.Tasks.Task<ApiResponse<byte[]>> GenerateBarcodeQRCodeAsyncWithHttpInfo (string value);
         /// <summary>
-        /// Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
+        /// Generate a UPC-A code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-A barcode value to generate from</param>
-        /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> GenerateBarcodeUPCAAsync (string value);
+        /// <returns>Task of byte[]</returns>
+        System.Threading.Tasks.Task<byte[]> GenerateBarcodeUPCAAsync (string value);
 
         /// <summary>
-        /// Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
+        /// Generate a UPC-A code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-A barcode value to generate from</param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GenerateBarcodeUPCAAsyncWithHttpInfo (string value);
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        System.Threading.Tasks.Task<ApiResponse<byte[]>> GenerateBarcodeUPCAAsyncWithHttpInfo (string value);
         /// <summary>
-        /// Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
+        /// Generate a UPC-E code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-E barcode value to generate from</param>
-        /// <returns>Task of System.IO.Stream</returns>
-        System.Threading.Tasks.Task<System.IO.Stream> GenerateBarcodeUPCEAsync (string value);
+        /// <returns>Task of byte[]</returns>
+        System.Threading.Tasks.Task<byte[]> GenerateBarcodeUPCEAsync (string value);
 
         /// <summary>
-        /// Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
+        /// Generate a UPC-E code barcode as PNG file
         /// </summary>
         /// <remarks>
-        /// 
+        /// Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-E barcode value to generate from</param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GenerateBarcodeUPCEAsyncWithHttpInfo (string value);
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        System.Threading.Tasks.Task<ApiResponse<byte[]>> GenerateBarcodeUPCEAsyncWithHttpInfo (string value);
         #endregion Asynchronous Operations
     }
 
@@ -336,24 +336,24 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
         }
 
         /// <summary>
-        /// Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode 
+        /// Generate a EAN-13 code barcode as PNG file Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream GenerateBarcodeEAN13 (string value)
+        /// <returns>byte[]</returns>
+        public byte[] GenerateBarcodeEAN13 (string value)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = GenerateBarcodeEAN13WithHttpInfo(value);
+             ApiResponse<byte[]> localVarResponse = GenerateBarcodeEAN13WithHttpInfo(value);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode 
+        /// Generate a EAN-13 code barcode as PNG file Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > GenerateBarcodeEAN13WithHttpInfo (string value)
+        /// <returns>ApiResponse of byte[]</returns>
+        public ApiResponse< byte[] > GenerateBarcodeEAN13WithHttpInfo (string value)
         {
             // verify the required parameter 'value' is set
             if (value == null)
@@ -379,7 +379,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "image/png"
+                "application/octet-stream"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -413,31 +413,31 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<byte[]>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
         }
 
         /// <summary>
-        /// Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode 
+        /// Generate a EAN-13 code barcode as PNG file Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> GenerateBarcodeEAN13Async (string value)
+        /// <returns>Task of byte[]</returns>
+        public async System.Threading.Tasks.Task<byte[]> GenerateBarcodeEAN13Async (string value)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await GenerateBarcodeEAN13AsyncWithHttpInfo(value);
+             ApiResponse<byte[]> localVarResponse = await GenerateBarcodeEAN13AsyncWithHttpInfo(value);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode 
+        /// Generate a EAN-13 code barcode as PNG file Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GenerateBarcodeEAN13AsyncWithHttpInfo (string value)
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<byte[]>> GenerateBarcodeEAN13AsyncWithHttpInfo (string value)
         {
             // verify the required parameter 'value' is set
             if (value == null)
@@ -463,7 +463,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "image/png"
+                "application/octet-stream"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -497,30 +497,30 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<byte[]>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
         }
 
         /// <summary>
-        /// Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode 
+        /// Generate a EAN-8 code barcode as PNG file Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream GenerateBarcodeEAN8 (string value)
+        /// <returns>byte[]</returns>
+        public byte[] GenerateBarcodeEAN8 (string value)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = GenerateBarcodeEAN8WithHttpInfo(value);
+             ApiResponse<byte[]> localVarResponse = GenerateBarcodeEAN8WithHttpInfo(value);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode 
+        /// Generate a EAN-8 code barcode as PNG file Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > GenerateBarcodeEAN8WithHttpInfo (string value)
+        /// <returns>ApiResponse of byte[]</returns>
+        public ApiResponse< byte[] > GenerateBarcodeEAN8WithHttpInfo (string value)
         {
             // verify the required parameter 'value' is set
             if (value == null)
@@ -546,7 +546,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "image/png"
+                "application/octet-stream"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -580,31 +580,31 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<byte[]>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
         }
 
         /// <summary>
-        /// Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode 
+        /// Generate a EAN-8 code barcode as PNG file Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> GenerateBarcodeEAN8Async (string value)
+        /// <returns>Task of byte[]</returns>
+        public async System.Threading.Tasks.Task<byte[]> GenerateBarcodeEAN8Async (string value)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await GenerateBarcodeEAN8AsyncWithHttpInfo(value);
+             ApiResponse<byte[]> localVarResponse = await GenerateBarcodeEAN8AsyncWithHttpInfo(value);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode 
+        /// Generate a EAN-8 code barcode as PNG file Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value to generate from</param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GenerateBarcodeEAN8AsyncWithHttpInfo (string value)
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<byte[]>> GenerateBarcodeEAN8AsyncWithHttpInfo (string value)
         {
             // verify the required parameter 'value' is set
             if (value == null)
@@ -630,7 +630,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "image/png"
+                "application/octet-stream"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -664,30 +664,30 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<byte[]>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
         }
 
         /// <summary>
-        /// Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information 
+        /// Generate a QR code barcode as PNG file Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">QR code text to convert into the QR code barcode</param>
-        /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream GenerateBarcodeQRCode (string value)
+        /// <returns>byte[]</returns>
+        public byte[] GenerateBarcodeQRCode (string value)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = GenerateBarcodeQRCodeWithHttpInfo(value);
+             ApiResponse<byte[]> localVarResponse = GenerateBarcodeQRCodeWithHttpInfo(value);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information 
+        /// Generate a QR code barcode as PNG file Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">QR code text to convert into the QR code barcode</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > GenerateBarcodeQRCodeWithHttpInfo (string value)
+        /// <returns>ApiResponse of byte[]</returns>
+        public ApiResponse< byte[] > GenerateBarcodeQRCodeWithHttpInfo (string value)
         {
             // verify the required parameter 'value' is set
             if (value == null)
@@ -713,7 +713,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "image/png"
+                "application/octet-stream"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -747,31 +747,31 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<byte[]>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
         }
 
         /// <summary>
-        /// Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information 
+        /// Generate a QR code barcode as PNG file Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">QR code text to convert into the QR code barcode</param>
-        /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> GenerateBarcodeQRCodeAsync (string value)
+        /// <returns>Task of byte[]</returns>
+        public async System.Threading.Tasks.Task<byte[]> GenerateBarcodeQRCodeAsync (string value)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await GenerateBarcodeQRCodeAsyncWithHttpInfo(value);
+             ApiResponse<byte[]> localVarResponse = await GenerateBarcodeQRCodeAsyncWithHttpInfo(value);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information 
+        /// Generate a QR code barcode as PNG file Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">QR code text to convert into the QR code barcode</param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GenerateBarcodeQRCodeAsyncWithHttpInfo (string value)
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<byte[]>> GenerateBarcodeQRCodeAsyncWithHttpInfo (string value)
         {
             // verify the required parameter 'value' is set
             if (value == null)
@@ -797,7 +797,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "image/png"
+                "application/octet-stream"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -831,30 +831,30 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<byte[]>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
         }
 
         /// <summary>
-        /// Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode 
+        /// Generate a UPC-A code barcode as PNG file Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-A barcode value to generate from</param>
-        /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream GenerateBarcodeUPCA (string value)
+        /// <returns>byte[]</returns>
+        public byte[] GenerateBarcodeUPCA (string value)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = GenerateBarcodeUPCAWithHttpInfo(value);
+             ApiResponse<byte[]> localVarResponse = GenerateBarcodeUPCAWithHttpInfo(value);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode 
+        /// Generate a UPC-A code barcode as PNG file Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-A barcode value to generate from</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > GenerateBarcodeUPCAWithHttpInfo (string value)
+        /// <returns>ApiResponse of byte[]</returns>
+        public ApiResponse< byte[] > GenerateBarcodeUPCAWithHttpInfo (string value)
         {
             // verify the required parameter 'value' is set
             if (value == null)
@@ -880,7 +880,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "image/png"
+                "application/octet-stream"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -914,31 +914,31 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<byte[]>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
         }
 
         /// <summary>
-        /// Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode 
+        /// Generate a UPC-A code barcode as PNG file Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-A barcode value to generate from</param>
-        /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> GenerateBarcodeUPCAAsync (string value)
+        /// <returns>Task of byte[]</returns>
+        public async System.Threading.Tasks.Task<byte[]> GenerateBarcodeUPCAAsync (string value)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await GenerateBarcodeUPCAAsyncWithHttpInfo(value);
+             ApiResponse<byte[]> localVarResponse = await GenerateBarcodeUPCAAsyncWithHttpInfo(value);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode 
+        /// Generate a UPC-A code barcode as PNG file Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-A barcode value to generate from</param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GenerateBarcodeUPCAAsyncWithHttpInfo (string value)
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<byte[]>> GenerateBarcodeUPCAAsyncWithHttpInfo (string value)
         {
             // verify the required parameter 'value' is set
             if (value == null)
@@ -964,7 +964,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "image/png"
+                "application/octet-stream"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -998,30 +998,30 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<byte[]>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
         }
 
         /// <summary>
-        /// Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode 
+        /// Generate a UPC-E code barcode as PNG file Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-E barcode value to generate from</param>
-        /// <returns>System.IO.Stream</returns>
-        public System.IO.Stream GenerateBarcodeUPCE (string value)
+        /// <returns>byte[]</returns>
+        public byte[] GenerateBarcodeUPCE (string value)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = GenerateBarcodeUPCEWithHttpInfo(value);
+             ApiResponse<byte[]> localVarResponse = GenerateBarcodeUPCEWithHttpInfo(value);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode 
+        /// Generate a UPC-E code barcode as PNG file Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-E barcode value to generate from</param>
-        /// <returns>ApiResponse of System.IO.Stream</returns>
-        public ApiResponse< System.IO.Stream > GenerateBarcodeUPCEWithHttpInfo (string value)
+        /// <returns>ApiResponse of byte[]</returns>
+        public ApiResponse< byte[] > GenerateBarcodeUPCEWithHttpInfo (string value)
         {
             // verify the required parameter 'value' is set
             if (value == null)
@@ -1047,7 +1047,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "image/png"
+                "application/octet-stream"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -1081,31 +1081,31 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<byte[]>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
         }
 
         /// <summary>
-        /// Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode 
+        /// Generate a UPC-E code barcode as PNG file Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-E barcode value to generate from</param>
-        /// <returns>Task of System.IO.Stream</returns>
-        public async System.Threading.Tasks.Task<System.IO.Stream> GenerateBarcodeUPCEAsync (string value)
+        /// <returns>Task of byte[]</returns>
+        public async System.Threading.Tasks.Task<byte[]> GenerateBarcodeUPCEAsync (string value)
         {
-             ApiResponse<System.IO.Stream> localVarResponse = await GenerateBarcodeUPCEAsyncWithHttpInfo(value);
+             ApiResponse<byte[]> localVarResponse = await GenerateBarcodeUPCEAsyncWithHttpInfo(value);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode 
+        /// Generate a UPC-E code barcode as PNG file Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">UPC-E barcode value to generate from</param>
-        /// <returns>Task of ApiResponse (System.IO.Stream)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<System.IO.Stream>> GenerateBarcodeUPCEAsyncWithHttpInfo (string value)
+        /// <returns>Task of ApiResponse (byte[])</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<byte[]>> GenerateBarcodeUPCEAsyncWithHttpInfo (string value)
         {
             // verify the required parameter 'value' is set
             if (value == null)
@@ -1131,7 +1131,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
 
             // to determine the Accept header
             String[] localVarHttpHeaderAccepts = new String[] {
-                "image/png"
+                "application/octet-stream"
             };
             String localVarHttpHeaderAccept = this.Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
             if (localVarHttpHeaderAccept != null)
@@ -1165,9 +1165,9 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
                 if (exception != null) throw exception;
             }
 
-            return new ApiResponse<System.IO.Stream>(localVarStatusCode,
+            return new ApiResponse<byte[]>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (System.IO.Stream) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(System.IO.Stream)));
+                (byte[]) this.Configuration.ApiClient.Deserialize(localVarResponse, typeof(byte[])));
         }
 
     }

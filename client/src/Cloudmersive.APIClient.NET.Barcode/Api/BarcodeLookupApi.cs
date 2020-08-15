@@ -25,10 +25,10 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
     {
         #region Synchronous Operations
         /// <summary>
-        /// Lookup a barcode value and return product data
+        /// Lookup EAN barcode value, return product data
         /// </summary>
         /// <remarks>
-        /// 
+        /// Lookup an input EAN barcode and return key details about the product
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value</param>
@@ -36,10 +36,10 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
         BarcodeLookupResponse BarcodeLookupEanLookup (string value);
 
         /// <summary>
-        /// Lookup a barcode value and return product data
+        /// Lookup EAN barcode value, return product data
         /// </summary>
         /// <remarks>
-        /// 
+        /// Lookup an input EAN barcode and return key details about the product
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value</param>
@@ -48,10 +48,10 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
         #endregion Synchronous Operations
         #region Asynchronous Operations
         /// <summary>
-        /// Lookup a barcode value and return product data
+        /// Lookup EAN barcode value, return product data
         /// </summary>
         /// <remarks>
-        /// 
+        /// Lookup an input EAN barcode and return key details about the product
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value</param>
@@ -59,10 +59,10 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
         System.Threading.Tasks.Task<BarcodeLookupResponse> BarcodeLookupEanLookupAsync (string value);
 
         /// <summary>
-        /// Lookup a barcode value and return product data
+        /// Lookup EAN barcode value, return product data
         /// </summary>
         /// <remarks>
-        /// 
+        /// Lookup an input EAN barcode and return key details about the product
         /// </remarks>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value</param>
@@ -169,7 +169,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
         }
 
         /// <summary>
-        /// Lookup a barcode value and return product data 
+        /// Lookup EAN barcode value, return product data Lookup an input EAN barcode and return key details about the product
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value</param>
@@ -181,7 +181,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
         }
 
         /// <summary>
-        /// Lookup a barcode value and return product data 
+        /// Lookup EAN barcode value, return product data Lookup an input EAN barcode and return key details about the product
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value</param>
@@ -255,7 +255,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
         }
 
         /// <summary>
-        /// Lookup a barcode value and return product data 
+        /// Lookup EAN barcode value, return product data Lookup an input EAN barcode and return key details about the product
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value</param>
@@ -268,7 +268,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Api
         }
 
         /// <summary>
-        /// Lookup a barcode value and return product data 
+        /// Lookup EAN barcode value, return product data Lookup an input EAN barcode and return key details about the product
         /// </summary>
         /// <exception cref="Cloudmersive.APIClient.NET.Barcode.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="value">Barcode value</param>

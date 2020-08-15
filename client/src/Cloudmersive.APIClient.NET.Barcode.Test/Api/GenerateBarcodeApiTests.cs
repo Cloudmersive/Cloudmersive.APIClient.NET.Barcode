@@ -72,7 +72,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string value = null;
             //var response = instance.GenerateBarcodeEAN13(value);
-            //Assert.IsInstanceOf<System.IO.Stream> (response, "response is System.IO.Stream");
+            //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
         /// <summary>
@@ -84,7 +84,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string value = null;
             //var response = instance.GenerateBarcodeEAN8(value);
-            //Assert.IsInstanceOf<System.IO.Stream> (response, "response is System.IO.Stream");
+            //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
         /// <summary>
@@ -96,7 +96,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string value = null;
             //var response = instance.GenerateBarcodeQRCode(value);
-            //Assert.IsInstanceOf<System.IO.Stream> (response, "response is System.IO.Stream");
+            //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
         /// <summary>
@@ -108,7 +108,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string value = null;
             //var response = instance.GenerateBarcodeUPCA(value);
-            //Assert.IsInstanceOf<System.IO.Stream> (response, "response is System.IO.Stream");
+            //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
         /// <summary>
@@ -120,7 +120,7 @@ namespace Cloudmersive.APIClient.NET.Barcode.Test
             // TODO uncomment below to test the method and replace null with proper value
             //string value = null;
             //var response = instance.GenerateBarcodeUPCE(value);
-            //Assert.IsInstanceOf<System.IO.Stream> (response, "response is System.IO.Stream");
+            //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
     }
