@@ -76,6 +76,19 @@ namespace Cloudmersive.APIClient.NET.Barcode.Test
             //Assert.IsInstanceOf<BarcodeScanResult> (response, "response is BarcodeScanResult");
         }
         
+        /// <summary>
+        /// Test BarcodeScanImageAdvancedQR
+        /// </summary>
+        [Test]
+        public void BarcodeScanImageAdvancedQRTest()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //System.IO.Stream imageFile = null;
+            //string preprocessing = null;
+            //var response = instance.BarcodeScanImageAdvancedQR(imageFile, preprocessing);
+            //Assert.IsInstanceOf<BarcodeScanQRAdvancedResult> (response, "response is BarcodeScanQRAdvancedResult");
+        }
+        
     }
 
 }

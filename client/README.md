@@ -5,7 +5,7 @@ Barcode APIs let you generate barcode images, and recognize values from images o
 This C# SDK is for the [Cloudmersive Barcode API](https://www.cloudmersive.com/barcode-api):
 
 - API version: v1
-- SDK version: 3.0.3
+- SDK version: 3.1.0
 - Build package: io.swagger.codegen.languages.CSharpClientCodegen
 
 <a name="frameworks-supported"></a>
@@ -103,6 +103,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *BarcodeLookupApi* | [**BarcodeLookupEanLookup**](docs/BarcodeLookupApi.md#barcodelookupeanlookup) | **POST** /barcode/lookup/ean | Lookup EAN barcode value, return product data
 *BarcodeScanApi* | [**BarcodeScanImage**](docs/BarcodeScanApi.md#barcodescanimage) | **POST** /barcode/scan/image | Scan and recognize an image of a barcode
+*BarcodeScanApi* | [**BarcodeScanImageAdvancedQR**](docs/BarcodeScanApi.md#barcodescanimageadvancedqr) | **POST** /barcode/scan/image/advanced/qr | Advanced AI scan and recognition of an image of one or more QR barcodes
 *GenerateBarcodeApi* | [**GenerateBarcodeEAN13**](docs/GenerateBarcodeApi.md#generatebarcodeean13) | **POST** /barcode/generate/ean-13 | Generate a EAN-13 code barcode as PNG file
 *GenerateBarcodeApi* | [**GenerateBarcodeEAN8**](docs/GenerateBarcodeApi.md#generatebarcodeean8) | **POST** /barcode/generate/ean-8 | Generate a EAN-8 code barcode as PNG file
 *GenerateBarcodeApi* | [**GenerateBarcodeQRCode**](docs/GenerateBarcodeApi.md#generatebarcodeqrcode) | **POST** /barcode/generate/qrcode | Generate a QR code barcode as PNG file
@@ -114,6 +115,8 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [Model.BarcodeLookupResponse](docs/BarcodeLookupResponse.md)
+ - [Model.BarcodeQRResultItem](docs/BarcodeQRResultItem.md)
+ - [Model.BarcodeScanQRAdvancedResult](docs/BarcodeScanQRAdvancedResult.md)
  - [Model.BarcodeScanResult](docs/BarcodeScanResult.md)
  - [Model.ProductMatch](docs/ProductMatch.md)
 
