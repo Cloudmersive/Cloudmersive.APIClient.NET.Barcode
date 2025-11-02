@@ -25,18 +25,20 @@ using SwaggerDateConverter = Cloudmersive.APIClient.NET.Barcode.Client.SwaggerDa
 namespace Cloudmersive.APIClient.NET.Barcode.Model
 {
     /// <summary>
-    /// QR barcode instance
+    /// Advanced barcode scan result instance
     /// </summary>
     [DataContract]
-    public partial class BarcodeQRResultItem :  IEquatable<BarcodeQRResultItem>, IValidatableObject
+    public partial class BarcodeAdvancedResultItem :  IEquatable<BarcodeAdvancedResultItem>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="BarcodeQRResultItem" /> class.
+        /// Initializes a new instance of the <see cref="BarcodeAdvancedResultItem" /> class.
         /// </summary>
         /// <param name="rawText">The barcode text.</param>
-        public BarcodeQRResultItem(string rawText = default(string))
+        /// <param name="barcodeType">Type of the barcode; supported barcode types include AZTEC, CODABAR, CODE_39, CODE_93, CODE_128, DATA_MATRIX, EAN_8, EAN_13, ITF, MAXICODE, PDF_417, QR_CODE, RSS_14, RSS_EXPANDED, UPC_A, UPC_E, All_1D, UPC_EAN_EXTENSION, MSI, PLESSEY, IMB..</param>
+        public BarcodeAdvancedResultItem(string rawText = default(string), string barcodeType = default(string))
         {
             this.RawText = rawText;
+            this.BarcodeType = barcodeType;
         }
         
         /// <summary>
@@ -47,14 +49,22 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
         public string RawText { get; set; }
 
         /// <summary>
+        /// Type of the barcode; supported barcode types include AZTEC, CODABAR, CODE_39, CODE_93, CODE_128, DATA_MATRIX, EAN_8, EAN_13, ITF, MAXICODE, PDF_417, QR_CODE, RSS_14, RSS_EXPANDED, UPC_A, UPC_E, All_1D, UPC_EAN_EXTENSION, MSI, PLESSEY, IMB.
+        /// </summary>
+        /// <value>Type of the barcode; supported barcode types include AZTEC, CODABAR, CODE_39, CODE_93, CODE_128, DATA_MATRIX, EAN_8, EAN_13, ITF, MAXICODE, PDF_417, QR_CODE, RSS_14, RSS_EXPANDED, UPC_A, UPC_E, All_1D, UPC_EAN_EXTENSION, MSI, PLESSEY, IMB.</value>
+        [DataMember(Name="BarcodeType", EmitDefaultValue=false)]
+        public string BarcodeType { get; set; }
+
+        /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
         /// <returns>String presentation of the object</returns>
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class BarcodeQRResultItem {\n");
+            sb.Append("class BarcodeAdvancedResultItem {\n");
             sb.Append("  RawText: ").Append(RawText).Append("\n");
+            sb.Append("  BarcodeType: ").Append(BarcodeType).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -75,15 +85,15 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as BarcodeQRResultItem);
+            return this.Equals(input as BarcodeAdvancedResultItem);
         }
 
         /// <summary>
-        /// Returns true if BarcodeQRResultItem instances are equal
+        /// Returns true if BarcodeAdvancedResultItem instances are equal
         /// </summary>
-        /// <param name="input">Instance of BarcodeQRResultItem to be compared</param>
+        /// <param name="input">Instance of BarcodeAdvancedResultItem to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(BarcodeQRResultItem input)
+        public bool Equals(BarcodeAdvancedResultItem input)
         {
             if (input == null)
                 return false;
@@ -93,6 +103,11 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
                     this.RawText == input.RawText ||
                     (this.RawText != null &&
                     this.RawText.Equals(input.RawText))
+                ) && 
+                (
+                    this.BarcodeType == input.BarcodeType ||
+                    (this.BarcodeType != null &&
+                    this.BarcodeType.Equals(input.BarcodeType))
                 );
         }
 
@@ -107,6 +122,8 @@ namespace Cloudmersive.APIClient.NET.Barcode.Model
                 int hashCode = 41;
                 if (this.RawText != null)
                     hashCode = hashCode * 59 + this.RawText.GetHashCode();
+                if (this.BarcodeType != null)
+                    hashCode = hashCode * 59 + this.BarcodeType.GetHashCode();
                 return hashCode;
             }
         }

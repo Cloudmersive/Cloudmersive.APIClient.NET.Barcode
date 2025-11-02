@@ -64,6 +64,21 @@ namespace Cloudmersive.APIClient.NET.Barcode.Test
 
         
         /// <summary>
+        /// Test GenerateBarcodeCode128
+        /// </summary>
+        [Test]
+        public void GenerateBarcodeCode128Test()
+        {
+            // TODO uncomment below to test the method and replace null with proper value
+            //string value = null;
+            //int? width = null;
+            //int? height = null;
+            //bool? includeLabel = null;
+            //var response = instance.GenerateBarcodeCode128(value, width, height, includeLabel);
+            //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
+        }
+        
+        /// <summary>
         /// Test GenerateBarcodeEAN13
         /// </summary>
         [Test]
@@ -71,7 +86,10 @@ namespace Cloudmersive.APIClient.NET.Barcode.Test
         {
             // TODO uncomment below to test the method and replace null with proper value
             //string value = null;
-            //var response = instance.GenerateBarcodeEAN13(value);
+            //int? width = null;
+            //int? height = null;
+            //bool? includeLabel = null;
+            //var response = instance.GenerateBarcodeEAN13(value, width, height, includeLabel);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
@@ -83,7 +101,10 @@ namespace Cloudmersive.APIClient.NET.Barcode.Test
         {
             // TODO uncomment below to test the method and replace null with proper value
             //string value = null;
-            //var response = instance.GenerateBarcodeEAN8(value);
+            //int? width = null;
+            //int? height = null;
+            //bool? includeLabel = null;
+            //var response = instance.GenerateBarcodeEAN8(value, width, height, includeLabel);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
@@ -95,7 +116,9 @@ namespace Cloudmersive.APIClient.NET.Barcode.Test
         {
             // TODO uncomment below to test the method and replace null with proper value
             //string value = null;
-            //var response = instance.GenerateBarcodeQRCode(value);
+            //int? width = null;
+            //int? height = null;
+            //var response = instance.GenerateBarcodeQRCode(value, width, height);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
@@ -107,7 +130,10 @@ namespace Cloudmersive.APIClient.NET.Barcode.Test
         {
             // TODO uncomment below to test the method and replace null with proper value
             //string value = null;
-            //var response = instance.GenerateBarcodeUPCA(value);
+            //int? width = null;
+            //int? height = null;
+            //bool? includeLabel = null;
+            //var response = instance.GenerateBarcodeUPCA(value, width, height, includeLabel);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
@@ -119,7 +145,10 @@ namespace Cloudmersive.APIClient.NET.Barcode.Test
         {
             // TODO uncomment below to test the method and replace null with proper value
             //string value = null;
-            //var response = instance.GenerateBarcodeUPCE(value);
+            //int? width = null;
+            //int? height = null;
+            //bool? includeLabel = null;
+            //var response = instance.GenerateBarcodeUPCE(value, width, height, includeLabel);
             //Assert.IsInstanceOf<byte[]> (response, "response is byte[]");
         }
         
